@@ -13,7 +13,8 @@ function show_image(i) {
 
     }
     for(i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
+        dots[i].className = dots[i].className.replace(" active", "");
+        console.log(dots[i])
     }
 
     if(index > images.length - 1) {
@@ -26,6 +27,6 @@ function show_image(i) {
     }
 
     images[index].style.display = "block";
-    dots[index].className += "active";
+    dots[index].className += " active";
 
 }
